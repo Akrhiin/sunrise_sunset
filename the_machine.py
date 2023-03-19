@@ -30,13 +30,11 @@ sunrise_colors = np.array(sunrise_colors).reshape(-1, 3)
 # test - uncomment to print sunrise_colors
 # print(sunrise_colors)
 
-
-
 # sunsets =====================================================
 sunset_colors = []
-for filename in os.listdir('sunset_data'):
+for filename in os.listdir('sunsets_data'):
     # open file
-    with open(os.path.join('sunset_data', filename), 'r') as file:
+    with open(os.path.join('sunsets_data', filename), 'r') as file:
         # read file
         colors = file.readlines()
         # convert to array
@@ -50,3 +48,7 @@ sunset_colors = np.array(sunset_colors).reshape(-1, 3)
 
 # test - uncomment to print sunset_colors
 # print(sunset_colors)
+
+# model =======================================================
+
+#    *insert model here*
